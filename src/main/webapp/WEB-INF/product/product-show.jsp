@@ -16,6 +16,7 @@
 </head>
 
 <body class="bgshow">
+    
   <div class="row"> 
     <div class="col-6"> 
       <img  src="${product.linkImage}" class="img-fluid rounded-start imgshow"  alt="">
@@ -23,7 +24,7 @@
       <div class="col-6 "> 
         <a href="/products" class="btn btn-outline-dark my-3 ">   <span class="icon"><i class='bx bx-arrow-to-left'></i></span>  Todos los Productos </a>
         <h2 class=""> Producto Detalles </h2>
-
+        
         <div class="container"> 
           <div class="card-body boxshowdeailts rounded-4">
               <div class="card-header text-body-tertiary"> <c:out value="${product.store.name}" /> <span class="icon"><i class='bx bxs-store-alt'></i></span> </div>

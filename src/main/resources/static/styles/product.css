@@ -156,7 +156,10 @@ body {
   }
 }
 
-
+.botones{
+  display: flex;
+  width: 80%;
+}
 .an{
   margin-top: 10px;
   padding: 10px;

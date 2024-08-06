@@ -17,12 +17,13 @@
 </head>
 
 <body class="bgshow">
+  
   <nav class="menu">
     <section class="menu_container">
         <h1 class="menu_logo">Logo</h1>
         <ul class="menu_links">
             <li class="menu_item">
-                <a href="#" class="menu_link">Home</a>
+                <a href="/" class="menu_link">Home</a>
             </li>
             <li class="menu_item">
                 <a href="/memberships" class="menu_link">Membresias</a>
