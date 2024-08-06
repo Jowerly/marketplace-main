@@ -1,0 +1,57 @@
+/* Option One */
+/* :root {
+  --colorbg: #2e3440;
+  --colorfg: #eceff4;
+  --colormain1: #81a1c1;
+  --color0: #3b4252;
+  --color1: #bf616a;
+  --color2: #a3be8c;
+  --color3: #ebcb8b;
+  --color4: #81a1c1;
+  --color5: #b48ead;
+  --color6: #88c0d0;
+  --color7: #e5e9f0;
+  --color8: #4c566a;
+  --color9: #bf616a;
+  --color10: #a3be8c;
+  --color11: #ebcb8b;
+  --color12: #81a1c1;
+  --color13: #b48ead;
+  --color14: #8fbcbb;
+  --color15: #eceff4;
+} */
+
+/* Option Two */
+:root {
+  --colorbg:#191724;
+  --colorfg:#e0def4;
+  --colormain1:#ebbcba;
+  --color0:#26233a;
+  --color1:#eb6f92;
+  --color2:#9ccfd8;
+  --color3:#f6c177;
+  --color4:#31748f;
+  --color5:#c4a7e7;
+  --color6:#ebbcba;
+  --color7:#e0def4;
+  --color8:#6e6a86;
+  --color9:#eb6f92;
+  --color10:#9ccfd8;
+  --color11:#f6c177;
+  --color12:#31748f;
+  --color13:#c4a7e7;
+  --color14:#ebbcba;
+  --color15:#e0def4;
+}
+
+.error-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.text-danger {
+  font-size: 15px;
+  color: var(--color1);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}

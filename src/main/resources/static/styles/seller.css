@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --colorbg: #191724;
+    --colorfg: #e0def4;
+    --colormain1: #ebbcba;
+    --color0: #26233a;
+    --color1: #eb6f92;
+    --color2: #9ccfd8;
+    --color3: #f6c177;
+    --color4: #31748f;
+    --color5: #c4a7e7;
+    --color6: #ebbcba;
+    --color7: #e0def4;
+    --color8: #6e6a86;
+    --color9: #eb6f92;
+    --color10: #9ccfd8;
+    --color11: #f6c177;
+    --color12: #31748f;
+    --color13: #c4a7e7;
+    --color14: #ebbcba;
+    --color15: #e0def4;
+  }
+  
+  .body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color0);
+  }
+  
+  .menu {
+    background-color: #2e3440;
+    color: white;
+    height: 5rem;
+    padding: 25px;
+    z-index: 1111;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  .menu_container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu_links {
+    height: 100%;
+    transition: transform 0.5s;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+  
+  .menu_links--show {
+    transform: unset;
+    width: 100%;
+  }
+  
+  .menu_item {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-360deg);
+  }
+  
+  .menu_item:hover {
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(90deg);
+  }
+  
+  .menu_nesting {
+    clip-path: var(--clip);
+    list-style: none;
+    transition: clip-path 0.3s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: #444;
+    z-index: 1111;
+  }
+  
+  #menu_arrow {
+    transform: var(--transform);
+    transition: transform 0.3s;
+    display: block;
+    margin-left: 3px;
+  }
+  
+  .menu_link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .menu_link:hover {
+    background-color: #2e3440;
+  }
+  
+  .menu_link--inside {
+    padding: 0 30px;
+    margin-top: 15px;
+    height: auto;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    height: 30px;
+    align-items: center;
+  }
+  
+  .menu_link--inside:hover {
+    background-color: #2e3440;
+  }
+  
+  .menu_hamburguer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #menu_img {
+    display: block;
+    width: 60px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu_hamburguer {
+        display: block;
+    }
+  
+    .menu_links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .menu_links.menu_links--show {
+        display: flex;
+    }
+  }
+  
+body {
+    background-color: var(--colorbg);
+    color: var(--colorfg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .icono1 {
+    font-size: 36px;
+  }
+  
+  .container {
+    margin-top: 200px;
+    background-color: var(--colorbg);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+  }
+
+  .list-group-item {
+    background-color: var(--color1);
+    color: var(--colorfg);
+  }
+  .carrito-principal .bx {
+    font-size: 32px; 
+  }
+  .list-group-item a {
+    color: var(--colorfg);
+  }
+
+  .list-group-item a:hover {
+    text-decoration: none;
+  }
+
+  .form-control {
+    background-color: var(--color2);
+    color: var(--colorbg);
+    border: none;
+  }
+
+  .form-control:focus {
+    background-color: var(--color2);
+    color: var(--colorbg);
+    border: none;
+    box-shadow: 0 0 5px var(--colormain1);
+  }
+
+  .btn-primary {
+    background-color: var(--color3);
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color3);
+    border: none;
+  }
+
+  .home-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
